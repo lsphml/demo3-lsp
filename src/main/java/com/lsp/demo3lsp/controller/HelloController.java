@@ -28,8 +28,8 @@ public class HelloController {
 
     @RequestMapping("/sys")
     public SystemInfo sys(){
-        String name = systemInfo.getName();
-        String password = systemInfo.getPassword();
+//        String name = systemInfo.getName();
+//        String password = systemInfo.getPassword();
         return  systemInfo;
     }
 }

@@ -5,7 +5,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>generator</module>
-        <module>test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -64,6 +63,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <!--如果不配置，热部署无法生效-->
                     <fork>true</fork>
                 </configuration>
             </plugin>
